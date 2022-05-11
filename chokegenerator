@@ -21,4 +21,4 @@ case "$(uname -s)" in
 	*) clipboard="xclip -selection c" ;;
 esac
 
-printf "https://raw.githubusercontent.com/iamchokerman/choke-generator/main/images/$(curl -s "https://github.com/iamchokerman/choke-generator/tree/main/images"|awk -F '"' '/class="css-truncate css-truncate-target d-block width-fit"/ {print $6}'|shuf|head -n1)"|$clipboard
+printf "https://raw.githubusercontent.com/iamchokerman/choke-generator/main/images/$(curl -s "https://github.com/iamchokerman/chokegenerator/tree/main/images"|awk -F '"' '/class="css-truncate css-truncate-target d-block width-fit"/ {print $6}'|shuf|head -n1)"|$clipboard
