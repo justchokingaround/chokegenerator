@@ -1,0 +1,4 @@
+#!/bin/sh
+# right now only works on mac os, will change it up to work on linux and windows (ew) later
+
+printf "https://raw.githubusercontent.com/iamchokerman/choke-generator/main/images/$(curl -s "https://github.com/iamchokerman/choke-generator/tree/main/images"|awk -F '"' '/class="css-truncate css-truncate-target d-block width-fit"/ {print $6}'|shuf|head -n1)"|pbcopy
